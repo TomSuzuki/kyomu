@@ -20,6 +20,20 @@ class Player {
             e.preventDefault();
             return false;
         });
+
+        // スマホのタッチの登録（クリック時）
+        document.addEventListener('touchstart', (e) => {
+            this.keyStatus.click = true;
+            e.preventDefault();
+            return false;
+        });
+
+        // スマホのタッチの登録（離したとき）
+        document.addEventListener('touchend', (e) => {
+            this.keyStatus.click = false;
+            e.preventDefault();
+            return false;
+        });
     }
 
     // クリックしたか？
