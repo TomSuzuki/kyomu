@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    background: linear-gradient(#666666, #000000);
+}
+
+#kyomu_frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#uiFrame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#uiStart, #uiGameover {
+    position: fixed;
+    transform: translateY(-50%) translateX(-50%);
+    font-weight: bold;
+    font-size: 64px;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Verdana", "メイリオ";
+}
+
+#uiGameoverMsg {
+    font-size: large;
+}
+
+#uiScore {
+    color: #FFFFFF;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 20px;
+    left: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#kyomu {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#footer {
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 2px;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+}
+
+#footer>* {
+    color: #FFFFFF;
+}
